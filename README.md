@@ -15,6 +15,8 @@ There was one more thing first i thought to increase the accuracy i should add m
 equally and hence when i added a feature last_letter i already had a feature called last_twoletters there was no point to do so but did it the accuracy went up to 77.89% 
 lets say there was previously 3 features then naive bayes weighted probability of those features was 1/3 but when i added the fourth feature the last_letter it essentially made the weighted probability of the 
 last letter to 2/4 thats why the accuracy went up. the numbers 1/3 and 2/4 are for better understanding not how it really works under the hood and this what we call feature correlation.
+
+The dataset I took contains majorily US names hence its acuracy might drop while predicting the gender of Indian names.
 ## Feature Engineering
 The model predicts gender based on engineered name features. The following parameters were extracted and vectorized for the probability matrices:
 
