@@ -1,9 +1,6 @@
 # Logistic Regression (L2 Regularization): First Principles
 
-**Author:** Yash Raj  
-**Focus:** Mathematical Optimization, Calculus, and Vectorization  
 
-## Overview
 This directory contains a ground-up implementation of Logistic Regression with an L2 penalty (Ridge Regularization). The primary objective was to bypass high-level optimization solvers (like `scikit-learn` or `SciPy`) to manually code the log-loss objective function, gradient descent, and mathematical regularization using pure `NumPy`.
 
 ## The Mathematics of L2 Regularization
