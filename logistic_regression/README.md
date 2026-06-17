@@ -19,3 +19,13 @@ Penalizing the intercept term ($w_0$) mathematically forces the model's decision
 ```python
 # Penalty applied strictly to features w_1 through w_d
 grad = base_grad + lambda_val * np.concatenate(([0], w[1:]))
+### 3.Accuracy part:
+if you se the code the accuracy is cloise 85% and you might wonder why is not shooting up to 99% since the data is synthetically generated
+the reason is the target column in there i use three & operatorss meaning i built a 3D rectangular box in my feature space every single inside the datapoint is 1 otherwise -1 since it is a linear classifier it is governed by the equation 
+$$
+w_1x_1 + w_2x_2 + w_3x_3 + b = 0
+$$
+it creates a perfect piece flat paper(hyperplane)
+if the data requires the model to draw corners.It needs to say, "Stop going right at Age 30, turn 90 degrees, and go up until Salary
+30,000."
+the paper cannot bend 90° or curve at corners. the 15% error rate is the exact corners the paper cannot curve to hence it leaves them out
