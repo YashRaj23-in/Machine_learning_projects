@@ -19,7 +19,9 @@ Penalizing the intercept term ($w_0$) mathematically forces the model's decision
 ```python
 # Penalty applied strictly to features w_1 through w_d
 grad = base_grad + lambda_val * np.concatenate(([0], w[1:]))
-### 3.Accuracy part:
+```
+
+### 3. Accuracy part:
 if you se the code the accuracy is cloise 85% and you might wonder why is not shooting up to 99% since the data is synthetically generated
 the reason is the target column in there i use three & operatorss meaning i built a 3D rectangular box in my feature space every single inside the datapoint is 1 otherwise -1 since it is a linear classifier it is governed by the equation 
 $$
